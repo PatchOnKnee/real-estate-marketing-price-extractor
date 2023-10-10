@@ -9,5 +9,9 @@
       "js": ["scripts/content.js"],
       "matches": ["https://www.realestate.com.au/*"]
     }
-  ]
+  ],
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "scripts/service-worker.js"
+  }
 }
