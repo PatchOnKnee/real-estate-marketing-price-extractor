@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Realestate.com marketing price finders",
+  "version": "1.0",
+  "description": "Extract and display the marketing price from realestate.com.au",
+  "content_scripts": [
+    {
+      "run_at": "document_idle",
+      "js": ["scripts/content.js"],
+      "matches": ["https://www.realestate.com.au/*"]
+    }
+  ]
+}
