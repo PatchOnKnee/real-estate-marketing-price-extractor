@@ -1,7 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Realestate.com marketing price finders",
-  "version": "1.0",
+  "name": "Realestate.com.au marketing price finder",
+  "author": "PatchOnKnee",
+  "version": "0.1",
   "description": "Extract and display the marketing price from realestate.com.au",
   "content_scripts": [
     {
@@ -10,6 +11,9 @@
       "matches": ["https://www.realestate.com.au/*"]
     }
   ],
+  "icons": {
+    "240": "images/icon-240.png"
+  },
   "permissions": ["tabs"],
   "background": {
     "service_worker": "scripts/service-worker.js"
